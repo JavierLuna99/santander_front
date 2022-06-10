@@ -17,3 +17,8 @@ button {
     color: white;
     background-color: #025157;
 }
+
+.centrado {
+    margin: 10px auto 10px;
+    display: block;
+}
