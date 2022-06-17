@@ -78,7 +78,62 @@ li {
     border-radius: 5px;
 }
 
-.main{
-    margin-top: 140px;
+.main {
+    margin-top: 285px;
     text-align: center;
+}
+.publish {
+    margin-left: 30px;
+}
+
+.publish > h3 {
+    font-family: 'Fresca', sans-serif;
+    color: #025157;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.publish > h5 {
+    color: #025157;
+    font-family: Verdana;
+    margin-right: 18px;
+}
+
+.publish > p {
+    color: #343434;
+    font-family: Verdana;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.publish > form {
+    display: flex;
+}
+
+.promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+}
+
+.explanatory-video > img{
+    width: 120px;
+    margin-top: 10px;
+}
+
+.explanatory-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
 }
