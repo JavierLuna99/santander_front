@@ -33,7 +33,7 @@ button {
 .header > * {
     display: inline-block;
     font-size: 16px;
-    line-height: 45px;
+    line-height: 15px;
     height: 100%;
     vertical-align: middle;
 }
@@ -57,7 +57,6 @@ li {
     color: #025157;
     font-weight: 500;
     text-align: center;
-    
 }
 
 .actions {
@@ -146,6 +145,61 @@ li {
     left: 0;
     right: 0;
     background-color: #fffbf7;
+    z-index: 10;
+}
+
+.features {
+    display: grid;
+    grid-template: repeat(2, 330px) / repeat(2, 1fr);
+    background-color: #025157;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 5%  9%;
+}
+
+.feature-card {
+    background-color: white;
+    display: flex;
+    border-radius: 5px;
+    position: relative;
+}
+
+.feature-content {
+    width: 50%;
+    font-family: sans-serif;
+    margin-left: 50px;
+}
+
+.feature-content > *{
+    margin: 15px;
+}
+
+.feature-content h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.feature-content a {
+    color: #67b54b;
+    font-weight: bold;
+}
+
+.feature-content img {
+    height: 80px;
+    margin-left: 50px;
+}
+
+.feature-image {
+    width: 40%;
+    padding-top: 20px;
+}
+
+.feature-image img{
+    height: 80%;
+    width: 170px;
+    position: absolute;
+    right: 0;
 }
 
 .success-stories {
