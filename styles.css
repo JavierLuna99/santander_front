@@ -60,17 +60,22 @@ li {
 }
 
 .navbar {
-    width: 70%;
+    width: 100%;
     color: #025157;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
 }
 
+.navbar button {
+    width: 130px;
+    height: 50px;
+}
+
+
 .actions {
-    width: 15%;
+    width: auto;
     font-size: 14px;
     font-weight: 600;
-    text-align: right;
 }
 
 .actions > * {
@@ -190,6 +195,10 @@ li {
 .feature-content img {
     height: 80px;
     margin-left: 50px;
+}
+
+.feature-content p, a {
+        font-size: 15px;
 }
 
 .feature-image {
@@ -380,6 +389,124 @@ li {
     height: 200px;
 }
 
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+   
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .main {
+        margin-top: 130px;
+    }
+
+    .banner > img {
+        width: 100%;
+    }
+
+    .publish > form{
+        flex-direction: column;
+    }
+
+    .publish > form > div{
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .publish > form > div > input {
+        width: 65%;
+    }
+
+    .promo {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .explanatory-video > video {
+        width: 100%;
+    }
+
+    .publish {
+        margin-top: 10px;
+    }
+
+    .publish > h3 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature-card {
+        flex-direction: column;
+    }
+
+    .feature-content {
+        width: 90%;
+        height: 320px;
+        margin-left: 15px;
+        margin-right: 15px;
+        text-align: center;
+    }
+
+    .feature-image {
+        display: none;
+      }
+
+    .feature-content > h3 {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .feature-content > p {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    .feature-content a {
+        font-size: 12px;
+    }
+
+    .feature-content img {
+        margin-left: 0;
+    }
+} 
+    /* .features {
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding-left: 10px;
+        padding-right: 10px;
+        row-gap: 10px;
+        column-gap: 10px;
+      }
+    
+      .feature-image {
+        display: none;
+      }
+}  */
+  
+  /** dispositivos pequeños en vista landscape (horizontal) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    
+  }
+  
+  /** dispositivos medianos (tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+  
+  }
+  
+  /** dispositivos grandes (desktops) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+  
+  }
+  
+  /** dispositivos extra grandes (monitores grandes, tvs) */
+  @media (min-width: 1200px) {
+  
+  }
 
 
 
