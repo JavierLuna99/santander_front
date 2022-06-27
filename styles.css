@@ -198,7 +198,7 @@ li {
 }
 
 .feature-content p, a {
-        font-size: 15px;
+    font-size: 15px;
 }
 
 .feature-image {
@@ -346,10 +346,15 @@ li {
     background-color: white;
     border: 1px solid #dadada;
     border-radius: 5px;
-    height: 500px;
+    height: 576px;
     display: flex;
     position: relative;
     flex-flow: column;
+}
+
+.card-step-body {
+    height: 226px;
+    padding: 25px;
 }
 
 .card-step-body h3 {
@@ -357,21 +362,21 @@ li {
     color: #025157;
     font-size: 30px;
     font-weight: bolder;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     margin-top: 0;
 }
 
-.card-step p {
+.card-step-body p {
     font-size: 15px;
     text-align: left;
-    width: 85%;
-    margin-bottom: 20px;
-    line-height: 25px;
+    width: 100%;
+    height: 85px;
+    margin: 15px 0;
+    line-height: 20px;
 }
 
 .card-step-image { 
-    position: relative;
-    height: 300px;
+    height: 350px;
     width: 100%;
 }
 
@@ -383,10 +388,6 @@ li {
 .card-step-icon {
     width: 100%;
     height: 90%;
-}
-
-.card-step-body {
-    height: 200px;
 }
 
 /** dispositivos móviles en vista viewport (vertical) */
@@ -501,6 +502,67 @@ li {
 
     .stories {
         width: 100%;
+    }
+
+    .how-does-it-work {
+        padding: 16px;
+    }
+
+    .how-does-it-work h2{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .how-does-it-work p {
+        font-size: 18px;
+        margin: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .steps { 
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding: 0 10px;
+        row-gap: 20px;
+    }
+
+    .card-step {
+        flex-direction: row-reverse;
+        position: relative;
+        height: 280px;
+    }
+
+    .card-step-icon {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 21px;
+        height: 61px;
+        /* TENER HIDDEN MIENTRAS NO SE TENGA LA IMAGEN */
+        visibility: hidden;
+    }
+
+    .card-step-body {
+        text-align: left;
+        height: 100%;
+        width: 80%;
+        padding: 10px;
+    }
+
+    .card-step-body h3 { 
+        margin-top: 30px;
+    }
+
+    .card-step-body p {
+        margin: 20px 0;
+        font-size: 15px;
+        height: 100px;
+
+    }
+
+    .card-step-image {
+        height: 100%;
+        width: 20%;
     }
 
 } 
