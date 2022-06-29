@@ -39,9 +39,9 @@
             </div>
         </header>
     </section> -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fffbf7;">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand logo" href="#">
+            <a class="navbar-brand logo" href="index.html">
                 <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -52,10 +52,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Platform</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Platform</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="pricing.html">Pricing</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Customers</a>
@@ -217,22 +217,82 @@
             </figure>
         </article>
 
-        <article class="stories">
-            <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
-                alt="Imagen profile-headshot-square">
-            <div class="card-body">
-                <div class="company">
-                    <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png"
-                        alt="Imagen every logo">
+        <article class="stories-carousel">
+            <section class="card-container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" style="padding-bottom: 45px;">
+                        <div class="carousel-item active">
+                            <article class="stories">
+                                <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
+                                    alt="Imagen profile-headshot-square">
+                                <div class="card-body">
+                                    <div class="company">
+                                        <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png"
+                                            alt="Imagen every logo">
+                                    </div>
+                                    <h4>Everly</h4>
+                                    <h3>Early-Stage CPG Brand Increases Lead Conversion 20x, Ecommerce Revenue 20%</p>
+                                        <div class="results"> 
+                                            <img src="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png"
+                                            alt="Imagen cart icon">
+                                        <p>22% of monthly revenue influenced by content</p>
+                                        </div>
+                                        <button>See Case Study</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="carousel-item">
+                            <article class="stories">
+                                <img src="https://getmatcha.com/wp-content/uploads/2019/08/0.jpg"
+                                    alt="Imagen Seato Summit worker">
+                                <div class="card-body">
+                                    <div class="company">
+                                        <img src="https://getmatcha.com/wp-content/uploads/2019/08/SeatoSummitLogo.png"
+                                            alt="Imagen Seato Summit logo">
+                                    </div>
+                                    <h4>Sea to Summit</h4>
+                                    <h3>Sea to Summit’s Ecommerce Site Traffic Climbs 189%, New Subscribers 820%</p>
+                                        <div class="results">
+                                            <img src="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png"
+                                            alt="Imagen cart icon">
+                                        <p>500% increase in traffic from social media</p>
+                                        </div>
+                                        <button>See Case Study</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="carousel-item">
+                            <article class="stories">
+                                <img src="https://getmatcha.com/wp-content/uploads/2019/06/matt-and-margaret_headshot.png"
+                                    alt="Imagen Mambe workers">
+                                <div class="card-body">
+                                    <div class="company">
+                                        <img src="https://getmatcha.com/wp-content/uploads/2019/06/mambe-logo-1.png"
+                                            alt="Imagen Mambe logo">
+                                    </div>
+                                    <h4>Mambe Waterproof Blankets</h4>
+                                    <h3>How Mambe Increased Conversions by 327%, Reduced CPL by 60%</p>
+                                        <div class="results">
+                                            <img src="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png"
+                                                alt="Imagen cart icon">
+                                            <p>+327% more popup conversions at a 60% lower cost</p>
+                                        </div>
+                                        <button>See Case Study</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                    </button>
                 </div>
-                <h4>Everly</h4>
-                <h3>Early-Stage CPG Brand Increases Lead Conversion 20x, Ecommerce Revenue 20%</p>
-                    <!-- <img 
-                    src="https://toppng.com/uploads/preview/shopping-cart-png-image-shopping-cart-icon-sv-11562865326ta92uix1ak.png"
-                    alt="Imagen cart icon"> -->
-                    <p>22% of monthly revenue influenced by content</p>
-                    <button>See Case Study</button>
-            </div>
+            </section>
         </article>
     </section>
 
@@ -309,8 +369,11 @@
                 </div>
             </article>
         </div>
-    </section>
 
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
