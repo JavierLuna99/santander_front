@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 body {
     background-color: #fffbf7;
@@ -32,7 +32,7 @@ button {
 
 a {
     color: #67b54b;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .header {
@@ -41,7 +41,7 @@ a {
     font-family: sans-serif;
 }
 
-.header > * {
+.header>* {
     display: inline-block;
     font-size: 16px;
     line-height: 15px;
@@ -59,7 +59,7 @@ li {
     width: 15%;
 }
 
-.logo > img {
+.logo>img {
     width: 15%;
 }
 
@@ -68,8 +68,14 @@ li {
     text-align: center;
 }
 
+.nav-item {
+    margin: 0;
+    font-weight: 200;
+}
+
 .nav-link {
     padding: .5rem 1rem;
+    font-size: 16px;
 }
 
 .navbar-light .nav-item .nav-link {
@@ -86,22 +92,27 @@ li {
 
 
 .actions {
-    width: auto;
+    text-align: right;
+    font-weight: 300;
     font-size: 14px;
 }
 
-.actions > * {
+.actions>* {
     margin: 0 10px 0;
 }
 
-.actions > a {
+.actions>a {
     color: #67b54b;
+    font-size: 14px;
 }
 
-.actions > button {
+.actions>button {
     color: white;
     background-color: #67b54b;
-    padding: 12px 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     border: 0;
     border-radius: 5px;
 }
@@ -115,24 +126,25 @@ li {
     max-width: 1000px;
     max-height: 1200px;
 }
+
 .publish {
     margin-left: 30px;
 }
 
-.publish > h3 {
+.publish>h3 {
     font-family: 'Fresca', sans-serif;
     color: #025157;
     font-size: 40px;
     line-height: 48px;
 }
 
-.publish > h5 {
+.publish>h5 {
     color: #025157;
     font-family: Verdana;
     margin-right: 18px;
 }
 
-.publish > p {
+.publish>p {
     color: #343434;
     font-family: Verdana;
     font-size: 16px;
@@ -141,7 +153,7 @@ li {
     text-align: justify;
 }
 
-.publish > form {
+.publish>form {
     display: flex;
 }
 
@@ -152,7 +164,7 @@ li {
     align-items: center;
 }
 
-.explanatory-video > img{
+.explanatory-video>img {
     width: 120px;
     margin-top: 10px;
 }
@@ -178,7 +190,7 @@ li {
     background-color: #025157;
     row-gap: 20px;
     column-gap: 20px;
-    padding: 5%  9%;
+    padding: 5% 9%;
 }
 
 .feature-card {
@@ -194,11 +206,11 @@ li {
     margin-left: 50px;
 }
 
-.feature-content > *{
+.feature-content>* {
     margin: 15px;
 }
 
-.feature-content h3{
+.feature-content h3 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: lighter;
     font-size: 25px;
@@ -209,7 +221,8 @@ li {
     margin-left: 50px;
 }
 
-.feature-content p, a {
+.feature-content p,
+a {
     font-size: 15px;
 }
 
@@ -218,7 +231,7 @@ li {
     padding-top: 20px;
 }
 
-.feature-image img{
+.feature-image img {
     height: 80%;
     width: 170px;
     position: absolute;
@@ -229,8 +242,9 @@ li {
     max-width: 50%;
     margin: 50px auto;
 }
+
 .overview img {
-    max-width:  500px;
+    max-width: 500px;
     max-height: 450px;
     background: transparent;
 }
@@ -365,7 +379,7 @@ li {
     margin-bottom: 80px;
 }
 
-.steps{
+.steps {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
@@ -405,7 +419,7 @@ li {
     line-height: 20px;
 }
 
-.card-step-image { 
+.card-step-image {
     height: 350px;
     width: 100%;
 }
@@ -423,7 +437,7 @@ li {
 
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
-   
+
 
     h1 {
         font-size: 30px;
@@ -437,20 +451,20 @@ li {
         margin-top: 130px;
     }
 
-    .banner > img {
+    .banner>img {
         width: 100%;
     }
 
-    .publish > form{
+    .publish>form {
         flex-direction: column;
     }
 
-    .publish > form > div{
+    .publish>form>div {
         height: 50px;
         margin-top: 10px;
     }
 
-    .publish > form > div > input {
+    .publish>form>div>input {
         width: 65%;
     }
 
@@ -459,7 +473,7 @@ li {
         max-width: 90%;
     }
 
-    .explanatory-video > video {
+    .explanatory-video>video {
         width: 100%;
     }
 
@@ -467,7 +481,7 @@ li {
         margin-top: 10px;
     }
 
-    .publish > h3 {
+    .publish>h3 {
         font-size: 25px;
         line-height: 1.2;
     }
@@ -493,12 +507,12 @@ li {
         display: none;
     }
 
-    .feature-content > h3 {
+    .feature-content>h3 {
         font-size: 20px;
         width: 80%;
     }
 
-    .feature-content > p {
+    .feature-content>p {
         font-size: 15px;
         padding-bottom: 10px;
     }
@@ -510,7 +524,7 @@ li {
     .feature-content img {
         margin-left: 0;
     }
-    
+
     .success-stories {
         flex-direction: column;
         padding: 16px;
@@ -520,12 +534,13 @@ li {
     .success-stories h2 {
         font-size: 25px;
     }
+
     .overview {
         max-width: 100%;
         margin: 0;
     }
 
-    .overview p{
+    .overview p {
         font-size: 18px;
     }
 
@@ -552,7 +567,7 @@ li {
         font-size: 13px;
     }
 
-    .carousel-item button { 
+    .carousel-item button {
         width: 70%;
         font-size: 13px;
         margin: 0 30px;
@@ -563,7 +578,7 @@ li {
         padding: 16px;
     }
 
-    .how-does-it-work h2{
+    .how-does-it-work h2 {
         font-size: 30px;
         margin-top: 30px;
     }
@@ -575,7 +590,7 @@ li {
         width: 100%;
     }
 
-    .steps { 
+    .steps {
         grid-template: repeat(4, 1fr) / 1fr;
         padding: 0 10px;
         row-gap: 20px;
@@ -604,7 +619,7 @@ li {
         padding: 10px;
     }
 
-    .card-step-body h3 { 
+    .card-step-body h3 {
         margin-top: 30px;
     }
 
@@ -619,8 +634,8 @@ li {
         height: 100%;
         width: 20%;
     }
-    
-    .carousel-inner { 
+
+    .carousel-inner {
         padding-bottom: 10px;
     }
 
@@ -628,8 +643,9 @@ li {
         height: 1250px;
     }
 
-} 
-    /* .features {
+}
+
+/* .features {
         grid-template: repeat(4, 1fr) / 1fr;
         padding-left: 10px;
         padding-right: 10px;
@@ -641,28 +657,15 @@ li {
         display: none;
       }
 }  */
-  
-  /** dispositivos pequeños en vista landscape (horizontal) */
-  @media (min-width: 576px) and (max-width: 767px) {
-    
-  }
-  
-  /** dispositivos medianos (tablets) */
-  @media (min-width: 768px) and (max-width: 991px) {
-  
-  }
-  
-  /** dispositivos grandes (desktops) */
-  @media (min-width: 992px) and (max-width: 1199px) {
-  
-  }
-  
-  /** dispositivos extra grandes (monitores grandes, tvs) */
-  @media (min-width: 1200px) {
-  
-  }
 
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {}
 
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {}
 
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {}
 
-
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {}

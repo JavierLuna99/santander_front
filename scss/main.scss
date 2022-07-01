@@ -1,0 +1,95 @@
+@use 'global' as *;
+
+.blog {
+    background-color: #ffff;
+    max-width: unset;
+    padding: 5% 10%;
+
+    .title {
+        @extend %base-title;
+    }
+
+    .process-list {
+        margin-top: 40px;
+        margin-bottom: 36px;
+
+        .process {
+            margin-bottom: 25px;
+
+            & > div {
+
+                & > h3 {
+                    color: $dark-green-title;
+                    margin-bottom: 0;
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+
+                & > p {
+                    color: $dark-green-text;
+                    margin: 0;
+                }
+            } 
+        }
+
+        .process-icon {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+            text-align: center;
+            
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    .card {
+
+        .card-body {
+
+            & > h5 {
+                color: $gray;
+                font-size: 24px;
+                font-family: "Open Sans", sans-serif;
+            }
+
+            .metadata {
+                font-size: 14px;
+                font-weight: lighter;
+
+                .category {
+                    color: $light-green;
+                }
+
+                .read-time {
+                    color: $light-gray;
+                }
+            }
+
+            .card-text {
+                color: $gray;
+                font-size: 18px;
+            }
+
+            .author {
+                
+                p {
+                    margin-left: 5px;
+                    margin-top: 10px;
+                    font-weight: bold;
+                    font-size: 12px;
+                    color: $gray; 
+                }
+
+                img {
+                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                  }
+            }
+        }
+        
+    }
+
+}

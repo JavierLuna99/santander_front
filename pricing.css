@@ -44,6 +44,11 @@ body {
     text-align: center;
 }
 
+.nav-item {
+    margin: 0;
+    font-weight: 200;
+}
+
 .navbar-light .nav-item .nav-link {
     color: #025157;
 }
@@ -58,7 +63,7 @@ body {
 
 .actions {
     text-align: right;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 14px;
 }
 
