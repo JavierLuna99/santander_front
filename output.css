@@ -2,8 +2,32 @@
 Fuentes
 */
 .blog .title {
-  font-family: "Alegreya", serif;
+  font-family: "Fresca", sans-serif;
   color: #135359;
+  font-weight: bolder;
+}
+
+.signup-form {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.signup-form input, .signup-form button {
+  padding: 15px 20px;
+  border-radius: 8px;
+  height: 100%;
+}
+.signup-form button {
+  background-color: #025157;
+  color: white;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: none;
+  margin-left: -10px;
+}
+.signup-form input {
+  border: 1px solid #b6b6b6;
+  border-radius: 8px;
+  background-color: white;
 }
 
 .blog {
@@ -11,22 +35,27 @@ Fuentes
   max-width: unset;
   padding: 5% 10%;
 }
+.blog button {
+  padding: 10px 35px;
+}
 .blog .process-list {
   margin-top: 40px;
   margin-bottom: 36px;
 }
 .blog .process-list .process {
   margin-bottom: 25px;
+  display: flex;
 }
 .blog .process-list .process > div > h3 {
   color: #025157;
   margin-bottom: 0;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .blog .process-list .process > div > p {
   color: #135359;
   margin: 0;
+  font-size: 16px;
 }
 .blog .process-list .process-icon {
   width: 60px;
@@ -67,6 +96,51 @@ Fuentes
   border-radius: 50%;
   width: 35px;
   height: 35px;
+}
+
+.try-it {
+  padding: 5%;
+  background-color: #96d178;
+}
+.try-it > h2 {
+  font-size: 60px;
+  font-family: "Fresca", sans-serif;
+  color: #025157;
+  font-weight: bolder;
+}
+.try-it > p {
+  margin-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.cta {
+  padding: 75px 150px;
+}
+.cta .row {
+  background-color: #025157;
+  padding: 60px;
+  border-radius: 10px;
+}
+.cta .row .cta-content > h2 {
+  color: white;
+  font-family: "Fresca", sans-serif;
+  font-size: 34px;
+  width: 50%;
+  font-weight: bolder;
+}
+.cta .row .cta-content > p {
+  color: white;
+  font-size: 15px;
+}
+.cta .row .cta-form .signup-form > button {
+  background-color: #67b54b;
+}
+.cta .row .cta-form p {
+  color: white;
+  font-size: 14px;
+  margin: 15px 0;
+  width: 60%;
 }
 
 /*# sourceMappingURL=output.css.map */

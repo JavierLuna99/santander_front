@@ -1,5 +1,9 @@
 @use 'global' as *;
 
+.signup-form {
+    @extend %base-form;
+}
+
 .blog {
     background-color: #ffff;
     max-width: unset;
@@ -9,12 +13,17 @@
         @extend %base-title;
     }
 
+    button {
+        padding: 10px 35px;
+    }
+
     .process-list {
         margin-top: 40px;
         margin-bottom: 36px;
 
         .process {
             margin-bottom: 25px;
+            display: flex;
 
             & > div {
 
@@ -22,12 +31,13 @@
                     color: $dark-green-title;
                     margin-bottom: 0;
                     font-size: 30px;
-                    font-weight: 500;
+                    font-weight: 400;
                 }
 
                 & > p {
                     color: $dark-green-text;
                     margin: 0;
+                    font-size: 16px;
                 }
             } 
         }
@@ -92,4 +102,64 @@
         
     }
 
+}
+
+.try-it {
+    padding: 5%;
+    background-color: $light-green-background;
+    
+    & > h2 {
+        font-size: 60px;
+        font-family: 'Fresca', sans-serif;
+        color: $dark-green-title;
+        font-weight: bolder;
+    }
+
+    & > p {
+        margin-top: 10px;
+        font-family: "Open Sans", sans-serif;
+        color: #ffff;
+    }
+}
+
+.cta {
+    padding: 75px 150px;
+    
+    .row {
+        background-color: $dark-green-title;
+        padding: 60px;
+        border-radius: 10px;
+
+        .cta-content {
+           
+            & > h2 {
+                color: #ffff;
+                font-family: 'Fresca', sans-serif;         
+                font-size: 34px;
+                width: 50%;
+                font-weight: bolder;
+            }
+
+            & > p {
+                color: #ffff;
+                font-size: 15px;
+            }
+        }
+
+        .cta-form {
+
+            .signup-form {
+                & > button {
+                    background-color: $light-green;
+                }
+            }
+
+            p {
+                color: #ffff;
+                font-size: 14px;
+                margin: 15px 0;
+                width: 60%;
+            }
+        }
+    }
 }
