@@ -1,0 +1,159 @@
+@use 'global' as *;
+
+body {
+    background-color: #fffbf7 !important;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .logo {
+    width: 15%;
+  }
+  
+  .logo>img {
+    width: 15%;
+  }
+  
+  .navbar {
+    background-color: #fffbf7;
+    text-align: center;
+    font-weight: 400;
+    color: #025157;
+    font-family: "Open Sans", sans-serif;
+  
+    ul {
+      padding: 0; 
+      }
+    }
+  
+  .actions {
+    text-align: right;
+    font-size: 14px;
+  
+    & > * {
+      margin: 0 10px;
+    }
+  
+    a {
+      color: #67b54b;
+    }
+  
+    button {
+      background-color: #67b54b;
+      color: white;
+      padding: 12px 14px;
+      border: 0;
+      border-radius: 5px;
+    }
+  }
+  
+  /* Aqui van los estilos que copiamos de las otras páginas que funcionan */
+  
+  .top-features {
+    padding: 30px 0 65px;
+    margin-top: 150px;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 60px;
+  
+    h1 {
+      color: #025157;
+      font-family: 'Alegreya', serif;
+      font-weight: 700;
+    }
+  }
+  
+  .feature__img {
+    img {
+      width: 100%;
+    }
+  }
+  
+  .feature__title__anchor {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 24px;
+  
+    .feature__title {
+        margin-top: 50px;
+        font-weight: 500;
+        font-size: 24px;
+        font-family: 'Open Sans',sans-serif;
+        margin-bottom: 35px;
+        text-decoration: none;
+        color: inherit;
+        text-shadow: #025157 1px 1px 2px;
+        transition: color .3s ease-in-out;
+        transition: font-size 2s;
+
+        &:hover {
+            color:#67b54b;
+            font-size: 30px;
+        }
+    }
+
+  }
+
+  .flecha {
+    margin: 0 auto;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 35px;
+  
+    .flecha-contenedor {
+        position: relative;
+        height: 150px;
+        width: 150px;
+        margin-bottom: 65px;
+  
+        .flecha-animada {
+            position: absolute;
+            margin-top: 20px;
+            animation-name: up-and-down, side-to-side;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            height: 130px;
+            width: 130px;
+  
+        img {
+            width: 130px;
+            transform: rotate(-90deg);
+        }
+
+      }
+
+      @keyframes side-to-side {
+        from {left: -470px;}
+        to {left:   470px;}
+      }
+
+      @keyframes up-and-down {
+        0% {
+          top: 0; /* Aquí inicia la animación */
+        }
+  
+        25% {
+          top: -30px; /* Este es el punto donde alcanza la mitad del límite de los 60px, moviéndose hacia abajo */
+        }
+  
+        50% {
+          top: -60px; /* Este es el punto donde alcanza el límite de los 60px */
+        }
+  
+        75% {
+          top: -30px; /* Este es el punto donde alcanza la mitad del límite de los 60px, moviéndose hacia arriba */
+        }
+  
+        100% {
+          top: 0; /* Aquí termina la animación, ubicando el elemento en el punto de inicio */
+        }
+      }
+
+    }
+
+  }    

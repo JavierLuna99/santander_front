@@ -101,12 +101,12 @@ li {
     margin: 0 10px 0;
 }
 
-.actions>a {
+.actions > a {
     color: #67b54b;
     font-size: 14px;
 }
 
-.actions>button {
+.actions > button {
     color: white;
     background-color: #67b54b;
     padding-left: 14px;
@@ -125,6 +125,10 @@ li {
 .main img {
     max-width: 1000px;
     max-height: 1200px;
+}
+
+.texto-boton:hover {
+    background-color: #67b54b;
 }
 
 .publish {
@@ -437,7 +441,6 @@ a {
 
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
-
 
     h1 {
         font-size: 30px;
